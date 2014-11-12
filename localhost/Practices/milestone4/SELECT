@@ -1,0 +1,44 @@
+SELECT
+	SUM(quantity * price ) as Subtotal 
+
+FROM
+lineitem,
+product
+
+      
+WHERE
+e.EmployeeID=o.EmployeeID;
+AND
+o.OrderID= od.OrderID
+
+GROUP by o.employeeid
+ORDER by total desc.
+
+
+
+
+
+what is employee janet's address:
+
+
+SELECT * FROM product, invoice, lineitem WHERE invoice.invoice_id = lineitem.invoice_id AND invoice.invoice_id =  1 AND product.product_id = lineitem.product_id;
+
+
+SELECT
+	invoice_id,
+	customer_id,
+	SUM(quanitity * price) as total
+FROM
+	customer LEFT JOIN invoice USING (customer_id)
+	LEFT JOIN invoice_product USING (invoice_id)
+	LEFT JOIN product USING (product_id)
+GROUP By invoice_id
+
+
+SELECT SUM(quantity * price) as subtotal, firstname,lastname, invoice_id, date FROM customer LEFT JOIN invoice USING (customer_id) LEFT JOIN lineitem USING (invoice_id) LEFT JOIN product USING (product_id) GROUP BY invoice_id;
+
+
+
+BONUS:
+1:SELECT SUM(od.UnitPrice * od.Quantity) as total, c.Region FROM `Order Details` od, Orders o, Customers c WHERE c.CustomerID =o.CustomerID AND o.OrderID = od.OrderID GROUP BY c.Region ORDER BY `total` DESC
+ANSWER: ID?

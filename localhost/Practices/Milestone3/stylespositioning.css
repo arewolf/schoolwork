@@ -1,0 +1,42 @@
+header {
+	background-color:#AAA;
+	width:960px;
+	min-height: 150px;
+	overflow:hidden;
+	position:relative;
+	margin:0 auto;
+}
+
+header a.logo {
+	width: 300px;
+	min-height: 150px;
+	background-color: red;
+	font-size: 40px;
+	float:left;
+}
+
+nav {
+	float: right;
+	overflow:hidden;
+	position: absolute;
+	bottom:0;
+	right:0;
+
+}
+
+nav a.link {
+	display:block;
+	float: left;
+	background-color:lime;
+	padding:20px;
+	
+}
+a.link:hover {
+	background-color:green;
+
+}
+
+main {
+	clear: both;
+	background-color: #ddd;
+}

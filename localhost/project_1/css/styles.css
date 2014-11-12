@@ -1,0 +1,34 @@
+body {
+	background-image: url('/project_1/images/small_steps.png');
+}
+
+header {
+	background-color: white;
+	border-top: 1px solid #4c4c4c;
+}
+
+header > span {
+
+	font-size: 40pt;
+}
+
+header > nav {
+	background-color: #4c4c4c;
+	color: white;
+	font-weight: bold;
+}
+
+header a {
+	color: white;
+
+}
+
+footer {
+	background-color: white;
+	border-top: 1px solid #4c4c4c;
+	border-bottom: 1px solid #4c4c4c;
+}
+
+.phpvalues {
+	font-size: 30pt;
+}

@@ -1,0 +1,99 @@
+.main-container {
+	background-color: brown;
+}
+
+body {
+	background-color: green;
+}
+
+main {
+	background-color: gray;
+}
+
+header {
+	background-color: blue;
+}
+
+header > a {
+	background-color: lime;
+}
+
+header nav {
+	background-color: indianred;
+}
+
+header nav a {
+	background-color: coral;
+}
+
+header nav a:first-child {
+	background-color: gold;
+}
+
+header nav a:last-child {
+	background-color: tan;
+}
+
+aside {
+	background-color: darkblue;
+}
+
+aside > nav {
+	background-color: red;
+}
+
+aside nav a {
+	background-color: cyan;
+}
+
+aside nav a:first-child {
+	background-color: darkorange;
+}
+
+aside nav a:last-child {
+	background-color: darkred;
+
+}
+main article {
+	background-color: purple;
+}
+
+article h1 {
+	background-color:deeppink;
+}
+
+article p {
+	background-color: dimgrey;
+}
+
+article a {
+	background-color: dodgerblue;
+}
+
+article.special h1 {
+	background-color:greenyellow;
+}
+
+article.special p {
+	background-color: honeydew;
+}
+
+article.special a {
+	background-color: hotpink;
+}
+
+.special {
+	background-color: orange;
+}
+
+/*nav:nth-child(2) {
+	background-color: pink;
+}
+*/
+footer {
+	background-color: black;
+}
+
+footer p {
+	background-color:lawngreen;
+}

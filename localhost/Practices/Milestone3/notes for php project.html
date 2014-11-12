@@ -1,0 +1,92 @@
+notes for php project:
+
+3 states:
+	no get
+	get
+	with post
+
+
+two php files:
+one for the input page
+2nd page has validator classes
+	
+
+	Class Validator:
+		protected validateParam($param); handles if $_GET exists
+		public validate($param); 
+		
+		Sub-class:
+			email validator
+			username validator
+			password				>these will modify/override public validateParam($param)
+			phone						specific to the field.
+			age							
+
+
+			if we had a sanitize() from parent it might look like this is in the subclass:
+			
+			function validate($s){
+			$0= $this->validate_param($s);
+			$0= $this->sanitize($0);
+			return=$0;
+			}
+
+			this is similar to the subclass actual validations.
+
+public methods are the ones you should use:
+	public methods are the roads into private/protected methods....
+	$e=$_POST['email'];
+
+	$v=new EmailValidator();
+
+	$v->validate($e)
+
+
+
+
+this is how the php will get its values from the post data:
+
+$s1=$_POST['select1'];
+$t1=$_POST['text1'];
+
+	if ($s1=="email"){
+	$val=new EmVal();
+	}try{
+	$out=$val->validate($t1);
+	}catch {};
+
+
+
+
+this is factory validator creator:
+
+class ValidatorFactory {
+	public function createValidator ($type) {
+		if ($type =="email"){
+			return $emailVal = new EmailValidate();
+		} elseif ($type =="age"){
+			return $ageVal = new AgeValidate();
+		} elseif ($type =="password"){
+			return $passwordVal = new PassValidate();
+		}etc: for others to be created:
+
+		}else {
+		throw new Exception("Unknown Validator Type");
+		}
+	}
+}
+
+
+
+This is how we use the factory to call the proper validation subclass.
+$v=valFactory->createValidator('email');
+$v->validate($t1);
+
+
+
+constructors vs setters:
+
+
+
+
+

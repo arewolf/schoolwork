@@ -1,0 +1,12 @@
+span {
+			color: red;
+			font-size: 20pt;
+	}
+
+div > span {
+	color: red;
+}
+
+nav span {
+	color: blue;
+}

@@ -1,0 +1,5 @@
+"SELECT SUM(quantity * price) as total
+ 			FROM product, invoice, lineitem
+ 			WHERE invoice.invoice_id = lineitem.invoice_id 
+			AND invoice.invoice_id = 1
+ 			AND product.product_id = lineitem.product_id;

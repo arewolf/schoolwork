@@ -1,0 +1,59 @@
+to check for reply or original tweet;
+
+$('div a.foo')
+remember live binding for elements that don't yet exist...
+
+$('main')on('click, 'button', function(){
+	if($(this.parents('.replies').length){
+	//we are in replies; here we only want to make tweets();
+	}else{
+	//we are not, call the thread method, thread(); makes a whole new thread which makes tweets
+	}
+
+})
+//the above makes an if statement..... 
+	
+------------------------------------------------------------------
+php project:
+
+
+$sql="
+	SELECT *
+	FROM user
+	WHERE user_id =2;                   always use capital letters for select words, lowercase else;
+"											LIMIT 1 can be used to keep only 1 entry because we 
+											expect only 1.
+															
+
+$results = new mysqli(databse);
+while ($row = $results->fetch_assoc()){
+	
+}
+
+
+
+//
+
+
+switch (condition){
+	case < 4:
+		//code here
+		break;
+	case <5:
+		//code
+		break;
+	case 5:
+		//code
+		break;
+	defualt:
+		//code
+		break;
+
+
+
+
+
+}
+
+
+ternary $message = $user_logged ? "user logged in":"please log in";

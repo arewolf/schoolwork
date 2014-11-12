@@ -1,0 +1,15 @@
+div {
+	background-color: red;
+	padding: 2px;
+}
+
+div>a {
+	background-color: yellow;
+	padding: 2px;
+	display: inline-block;
+}
+
+p {
+	background-color: orange;
+	margin: 5px;
+}

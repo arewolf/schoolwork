@@ -1,0 +1,16 @@
+milestone 4 project:
+
+
+3 tables, 1 join, set data and retrieve data out.
+
+tables: invoice: pk | cust_id | date
+		lineItem: pk | invID | product_id | qty
+		product: pk | name | price |
+
+
+
+first page: 
+has general direction
+
+customer page:
+name, edit

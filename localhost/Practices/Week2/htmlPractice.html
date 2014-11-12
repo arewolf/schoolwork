@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML 2+ PRACTICES for FORMS</title>
+</head>
+<body>
+	
+	<h1>Radio Buttons</h1>
+	<form action="tester.php">
+		<label>Yes<input type="radio" value="y" id="Yes" name="gender"></label>
+		<label>No<input type="radio" value="n" id="No" name="gender"></label>
+		
+
+
+		<h1>Drop Down</h1>
+		<select name="colors">
+			<option value="Red">Red</option>
+			<option value="Blue">Blue</option>
+			<option value="Yellow">Yellow</option>
+			<option value="Orange">Orange</option>
+			<option value="Pink">Pink</option>
+			<option value="Black">Black</option>
+		</select>
+
+		<h1>Checkbox</h1>
+		<input type="checkbox" name="box">On
+		<input type="checkbox" name="box">Off
+		<br><br>
+		<h1>Forms Boxes</h1>
+
+		
+		<br><br><br>
+		<label>phone number<input placeholder="###-###-####" type="tel" name="phone#"></label>
+		<br><br>
+		<input placeholder="enter text here" type="text" name="firstName" required>
+		<br><br>
+<!--placeholders are not a replacement for labels.  Not all browsers will render placeholder text.  You get blank forms. input :email, text, tel, date-->
+		
+		<select name="state">
+		<option value="">--select a state--</option>
+		<option>Arizona</option>
+		<option>Arkansas</option>
+		<option>California</option>
+
+<!--<selected> can be added as an attribute in an <option selected> to select that option by defualt.
+<button disabled> disables a button. For text box, <input required> this makes this box have to be filled out.-->
+		</select>
+		<br><br><br>
+		<button>Submit</button>
+	</form>
+
+
+	
+
+
+</body>
+</html>

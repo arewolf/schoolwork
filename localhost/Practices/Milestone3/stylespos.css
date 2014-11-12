@@ -1,0 +1,18 @@
+
+div.container {
+	background-color: red;
+	position: relative;
+	height:200px;
+	width: 200px;
+}
+
+div {
+	height: 20px;
+	width:20px;
+	background-color:green;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+
+
+}

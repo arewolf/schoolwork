@@ -1,0 +1,33 @@
+<?php
+class DB {
+	private $db;
+	private static $the_db = NULL;
+	
+
+	private function __construct(){
+		$this->db= mysqli("","",'','');
+	}
+
+
+	public static function getDB(){
+		if(! $the_db){
+			$the_db = new DB();
+		}
+		return $the_db;
+	}
+
+
+	public function get($table, $fields, $criteria){
+		return $db->query('select ....');
+	}
+
+	public function insert($fields){
+
+	}
+
+
+
+}	
+
+$mydb = DB::getDB();
+$mydb->query("sqlstatement");

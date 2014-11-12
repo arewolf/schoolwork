@@ -1,0 +1,8 @@
+<?php
+$array=[1,2,3,4,5];
+$af= function($n){
+	return $n * $n;
+};
+
+$array3= array_map($af, $array);
+print_r($array3);
